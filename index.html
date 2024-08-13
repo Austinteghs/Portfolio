@@ -44,7 +44,7 @@
         <div id="lead-content">
             <h1>Osayame Eghosa</h1>
             <h2>Data Scientist || Data Science Instructor</h2>
-             <a href="https://drive.google.com/file/d/1VsYnVCTolIaO7_qw6IdDQcI8w3N8Il9z/view?usp=sharing" target="_blank" class="btn-rounded-white">Download Resume</a>
+             <a href="https://drive.google.com/file/d/12kBwjGAItQ1tOEhVdJEf9i2RntqAGguY/view?usp=sharing" target="_blank" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -74,18 +74,103 @@
     </div>
     <!-- End #about -->
 
-    <div id="skills" style="background-color: #87CEEB;">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Excel</li>
-            <li>SQL</li>
-            <li>Tableau</li>
-            <li>PowerBI</li>
-            <li>Python</li>
-            <li>Adobe Illustrator</li>
-        </ul>
+    <div id="skills" style="background-color: #87CEEB; padding: 80px 0;">
+        <div class="container">
+            <h2 class="heading text-center mb-5" style="color: #333; font-weight: 700; letter-spacing: 1px;">Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #007BFF;">
+                            <i class="fa fa-code" aria-hidden="true"></i> Programming & Databases
+                        </h3>
+                        <p style="color: #555;">SQL, Python (Pandas, NumPy, SQLite3)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #28A745;">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Data Visualization & Analysis
+                        </h3>
+                        <p style="color: #555;">Tableau, Power BI, Excel, Python (Seaborn, Matplotlib)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #FFC107;">
+                            <i class="fa fa-database" aria-hidden="true"></i> Data Engineering
+                        </h3>
+                        <p style="color: #555;">ETL processes, Data Cleaning, Database Management</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #17A2B8;">
+                            <i class="fa fa-wrench" aria-hidden="true"></i> Tools & Platforms
+                        </h3>
+                        <p style="color: #555;">GitHub, Jupyter Notebooks, VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End #skills -->
+
+    <style>
+        /* Hover effect on skill category boxes */
+        .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gradient background for the entire skills section */
+        #skills {
+            background: linear-gradient(135deg, #87CEEB, #E0FFFF);
+        }
+
+        /* Custom font and letter-spacing for the section heading */
+        .heading {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1.5px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .project-info p {
+                font-size: 14px;
+            }
+
+            #menu li {
+                margin-bottom: 10px;
+            }
+
+            #menu a {
+                font-size: 16px;
+                padding: 10px 15px;
+                display: block;
+            }
+
+            .hover-effect:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+
   
    <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -93,7 +178,7 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/vizz.jpg" />
+                        <img src="images/random.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -203,60 +288,60 @@
     <!-- End #projects -->
 
    
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form
-  action="https://formspree.io/f/xzbynrll"
-  method="POST"
-          >
-            <label>
-              Your email:
-              <input type="email" name="_replyto">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-          </form>
+        <div id="contact">
+            <h2>Get in Touch</h2>
+            <div id="contact-form">
+                <form
+    action="https://formspree.io/f/xzbynrll"
+    method="POST"
+            >
+                <label>
+                Your email:
+                <input type="email" name="_replyto">
+                </label>
+                <label>
+                Your message:
+                <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+            </div>
+            <!-- End #contact-form -->
         </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+        <!-- End #contact -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2023 OSAYAME EGHOSA
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/Austinteghs" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/in/eghosa-osayame-b8b769140" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 copyright">
+                        <p>
+                            Copyright &copy; 2023 OSAYAME EGHOSA
+                        </p>
+                    </div>
+                    <div class="col-sm-2 top">
+                        <span id="to-top">
+                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="col-sm-5 social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Austinteghs" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/eghosa-osayame-b8b769140" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-    
+        </footer>
+        <!-- End footer -->
+        
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/scripts.min.js"></script>
+    </body>
 
-</html>
+    </html>
