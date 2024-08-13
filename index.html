@@ -59,33 +59,91 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about" style = "background-color: rgba(180, 202, 229, 0.43);">
+    <div id="about" style="background-color: rgba(180, 202, 229, 0.43); ">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
+                    <img src="images/moi.jpg" alt="Osayame Eghosa" style="max-width: 100%; height: auto; border-radius: 10px;">
                 </div>
                 <div class="col-md-8">
-                    <p style="color: black;">
-                        I am Osayame Eghosa, a skilled data analyst and data science instructor. With expertise in Excel, SQL, Tableau, Power BI, Python, and R, I have consistently transformed complex data into actionable insights. My professional journey includes designing and delivering interactive courses, conducting research across various sectors, and developing data visualizations that drive strategic decision-making. Committed to leveraging data for impactful solutions, I aim to contribute to the advancement of data science and analytics. </p>
+                    <p style="color: black; line-height: 2.0; font-size: 2rem;">
+                        I am Osayame Eghosa, data science instructor and a junior data engineer with a solid foundation in Excel, SQL, Tableau, Power BI, Python, and R. My expertise spans designing scalable data pipelines, creating dynamic data models, and delivering impactful visualizations that inform strategic decisions. In my professional journey, I have successfully bridged the gap between data and actionable insights, both in the classroom and in the field. I am passionate about leveraging cutting-edge data engineering techniques to solve complex challenges and contribute to the digital transformation of industries.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
+    
 
-    <div id="skills" style="background-color: #87CEEB;">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Excel</li>
-            <li>SQL</li>
-            <li>Tableau</li>
-            <li>PowerBI</li>
-            <li>Python</li>
-            <li>Adobe Illustrator</li>
-        </ul>
+    <div id="skills" style="background-color: #87CEEB; padding: 80px 0;">
+        <div class="container">
+            <h2 class="heading text-center mb-5" style="color: #333; font-weight: 700; letter-spacing: 1px;">Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #007BFF;">
+                            <i class="fa fa-code" aria-hidden="true"></i> Programming & Databases
+                        </h3>
+                        <p style="color: #555;">SQL, Python (Pandas, NumPy, SQLite3)</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #28A745;">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Data Visualization & Analysis
+                        </h3>
+                        <p style="color: #555;">Tableau, Power BI, Excel, Python (Seaborn, Matplotlib)</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #FFC107;">
+                            <i class="fa fa-database" aria-hidden="true"></i> Data Engineering
+                        </h3>
+                        <p style="color: #555;">ETL processes, Data Cleaning, Database Management</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <div class="skill-category p-4 bg-white rounded shadow-sm text-center hover-effect">
+                        <h3 class="h5 mb-3" style="color: #17A2B8;">
+                            <i class="fa fa-wrench" aria-hidden="true"></i> Tools & Platforms
+                        </h3>
+                        <p style="color: #555;">GitHub, Jupyter Notebooks, VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End #skills -->
+    
+    <style>
+        /* Hover effect on skill category boxes */
+        .hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Gradient background for the entire skills section */
+        #skills {
+            background: linear-gradient(135deg, #87CEEB, #E0FFFF);
+        }
+    
+        /* Custom font and letter-spacing for the section heading */
+        .heading {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1.5px;
+        }
+    </style>
+    
   
    <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -93,7 +151,25 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/vizz.jpg" />
+                        <img src="images/etl.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Wealth Data ETL Project</h3>
+                        <p>
+                        Data Engineering task designed to extract, transform, and load (ETL) wealth-related data into a SQLite3 database. The project includes creating a database, defining the necessary tables, loading CSV data into the database, and viewing the results using ipython-sql.
+                        </p>
+                        <a href="https://github.com/Austinteghs/Wealth-Data-ETL-Project" target="_blank">View ETL Project</a>
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/random.jpg" class="img-fluid" alt="Data visualization projects preview" loading="lazy" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -102,12 +178,11 @@
                             Discover a comprehensive collection of over 500 meticulously researched static data visualizations crafted during my tenure at Mustard Insights. Covering diverse industries such as healthcare, football, entertainment, and global subjects—including topics related to Africa—these charts offer profound insights into complex data trends. Visit my Google Drive link to explore these visualizations and gain understanding of the compelling stories distilled from the data.
                         </p>
                         <a href="https://drive.google.com/drive/folders/1Z2gnlif2s5ca5ekmmpsWzRRce4f7kxiz?usp=share_link" target="_blank">View Data Vizzes</a>
-
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-
+                
 
                 <div class="project shadow-large">
                     <div class="project-image">
